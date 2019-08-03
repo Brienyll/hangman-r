@@ -59,6 +59,7 @@ class Hangman extends Component {
   /** render: render game */
   render() {
     const gameOver = this.state.nWrong >= this.props.maxWrong;
+    const altText = `${this.state.nWrong}/${this.props.maxWrong} guesses`;
     return (
       <div className='Hangman'>
         <h1>Hangman</h1>
